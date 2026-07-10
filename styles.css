@@ -1,0 +1,321 @@
+/* ===========================
+   Floating Widget
+=========================== */
+
+#qa-sidebar-widget {
+  position: fixed;
+  top: 10%;
+  right: 20px;
+  z-index: 999999;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ===========================
+   Floating Button
+=========================== */
+
+#qa-widget-trigger {
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 22px;
+
+  color: white;
+  background: #daefea;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.35);
+
+  transition: 0.25s;
+}
+
+#qa-widget-trigger:hover {
+  transform: scale(1.08);
+
+  background: #6fd0b9;
+}
+
+/* ===========================
+   Panel
+=========================== */
+
+#qa-widget-panel {
+  display: none;
+
+  position: absolute;
+
+  top: 60px;
+  right: 0;
+
+  width: 420px;
+
+  max-height: 650px;
+
+  background: #202123;
+
+  color: #ececf1;
+
+  border: 1px solid #3c3c3c;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.qa-widget-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 14px 18px;
+
+  background: #171717;
+
+  border-bottom: 1px solid #303030;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.qa-widget-header span {
+  color: #10a37f;
+}
+
+/* ===========================
+   Close Button
+=========================== */
+
+#qa-widget-close {
+  background: none;
+
+  border: none;
+
+  color: #bbb;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+#qa-widget-close:hover {
+  color: white;
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.qa-widget-content {
+  padding: 18px;
+
+  max-height: 560px;
+
+  overflow-y: auto;
+
+  line-height: 1.65;
+
+  font-size: 14px;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+.qa-widget-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.qa-widget-content::-webkit-scrollbar-thumb {
+  background: #555;
+
+  border-radius: 10px;
+}
+
+.qa-widget-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ===========================
+   Headings
+=========================== */
+
+.qa-widget-content h3 {
+  color: #10a37f;
+
+  margin-top: 18px;
+
+  margin-bottom: 8px;
+
+  font-size: 17px;
+}
+
+.qa-widget-content h4 {
+  color: #52d4b2;
+
+  margin-top: 16px;
+
+  margin-bottom: 6px;
+}
+
+/* ===========================
+   Lists
+=========================== */
+
+.qa-widget-content ul,
+.qa-widget-content ol {
+  padding-left: 22px;
+  margin: 12px 0;
+}
+
+.qa-widget-content li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Paragraphs
+=========================== */
+
+.qa-widget-content p {
+  margin: 10px 0;
+  line-height: 1.65;
+}
+
+/* ===========================
+   Inline Code
+=========================== */
+
+.qa-widget-content code:not(pre code) {
+  background: #2b2d31;
+
+  color: #7ee787;
+
+  padding: 2px 6px;
+
+  border-radius: 5px;
+
+  font-family: Consolas, monospace;
+}
+
+/* ===========================
+   Code Block
+=========================== */
+
+.qa-widget-content pre {
+  background: #111;
+
+  padding: 14px;
+
+  border-radius: 8px;
+
+  overflow-x: auto;
+
+  margin: 12px 0;
+}
+
+.qa-widget-content pre code {
+  background: none;
+
+  padding: 0;
+}
+
+.qa-widget-content pre code.hljs {
+  color: #e6e9ef;
+}
+
+.qa-widget-content pre code.hljs .hljs-comment,
+.qa-widget-content pre code.hljs .hljs-quote {
+  color: #8f99a6;
+}
+
+.qa-widget-content pre code.hljs .hljs-keyword,
+.qa-widget-content pre code.hljs .hljs-selector-tag,
+.qa-widget-content pre code.hljs .hljs-number,
+.qa-widget-content pre code.hljs .hljs-string,
+.qa-widget-content pre code.hljs .hljs-built_in,
+.qa-widget-content pre code.hljs .hljs-title {
+  color: #c8d7ff;
+}
+
+.qa-widget-content pre code.hljs .hljs-attr,
+.qa-widget-content pre code.hljs .hljs-variable,
+.qa-widget-content pre code.hljs .hljs-template-variable,
+.qa-widget-content pre code.hljs .hljs-tag {
+  color: #f0c674;
+}
+
+/* ===========================
+   Bold
+=========================== */
+
+.qa-widget-content strong {
+  color: white;
+}
+
+/* ===========================
+   Loading
+=========================== */
+
+.qa-loading {
+  text-align: center;
+
+  padding: 20px;
+
+  color: #10a37f;
+
+  font-style: italic;
+}
+
+/* ===========================
+   Message
+=========================== */
+
+.qa-message {
+  padding: 12px;
+
+  color: #ffb4b4;
+}
+
+.spinner {
+  width: 28px;
+
+  height: 28px;
+
+  margin: auto;
+
+  border: 4px solid #3a3a3a;
+
+  border-top: 4px solid #10a37f;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

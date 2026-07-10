@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+
+  "name": "Quick Ask",
+
+  "short_name": "Quick Ask",
+
+  "description": "Highlight any technical term inside ChatGPT and instantly get an explanation.",
+
+  "version": "2.0.0",
+
+  "author": "Quick Ask Extension",
+
+  "homepage_url": "https://github.com/your-username/quick-ask",
+
+  "support_url": "https://github.com/your-username/quick-ask/issues",
+
+  "icons": {
+    "16": "icons/icon128.png",
+    "48": "icons/icon128.png",
+    "128": "icons/icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://www.google.com/*"
+      ],
+      "js": [
+        "marked.min.js",
+        "highlight.min.js",
+        "highlight-javascript.min.js",
+        "highlight-css.min.js",
+        "content.js"
+      ],
+      "css": ["styles.css", "highlight-atom-one-dark.min.css"]
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": ["storage"]
+}

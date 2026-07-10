@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <h2>Quick Ask</h2>
+
+    <label>Groq API Key</label>
+
+    <input type="password" id="apiKey" placeholder="gsk_..." />
+
+    <label>Model</label>
+
+    <select id="model">
+      <option value="llama-3.1-8b-instant">Llama 3.1 8B Instant</option>
+
+      <option value="llama-3.3-70b-versatile">Llama 3.3 70B Versatile</option>
+    </select>
+
+    <label>Max Tokens</label>
+
+    <input type="number" id="maxTokens" value="500" />
+
+    <button id="saveBtn">Save Settings</button>
+
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
