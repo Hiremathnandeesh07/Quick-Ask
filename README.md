@@ -19,15 +19,6 @@ Quick Ask is a browser extension that lets users highlight text inside ChatGPT a
 4. Click **Load unpacked**.
 5. Select the extension folder.
 
-## Publishing
-
-This extension is ready for publishing to the Chrome Web Store. Before publishing:
-
-- Confirm `manifest.json` metadata
-- Add screenshots and icons
-- Set the correct GitHub repository URL
-- Upload the extension bundle as a ZIP file
-
 ## Repository
 
 Remote URL: https://github.com/Hiremathnandeesh07/Quick-Ask
